@@ -1,0 +1,106 @@
+/* Body */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    margin: 0;
+    padding-top: 15px 0 15px 0;
+    background-color: #783ec3;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-title {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-text {
+    font-family: sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-text:hover {
+    color:#1a0437;
+}
+
+/* Scrolling Images */
+
+.image1 {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+.image2 {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.image3 {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+/* Text On Images */
+
+.text-1 {
+    padding: 0 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 350px;
+    left: 25px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.text-2 {
+    padding: 0 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 350px;
+    left: 25px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.text-3 {
+    padding: 0 20px;
+    color: #fff;
+    position: absolute;
+    bottom: 350px;
+    left: 25px;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+/* Company Info */
+
+.info {
+    padding: 8% 5%;
+    background-color: #783ec3;
+}
+
+.info-text {
+    color: #fff;
+}
+
+ /* Our Plans */
+
+#plans {
+    padding: 5% 10%;
+} 
