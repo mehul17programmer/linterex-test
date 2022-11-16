@@ -18,6 +18,8 @@
     <!-- Font Link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script defer src="/js/app.js"></script>
+
 </head>
 <body>
     
@@ -29,7 +31,7 @@
   <!-- Nav Bar -->
   <section id="navbar">
     <div class="navbar justify-content-center navbar-brand">
-      <ul class="navbar-title">
+      <ul class="navbar-title hidden">
         <a class="navbar-text" href="index.html">Linterex</a>
       </ul>
     </div>
@@ -43,9 +45,9 @@
   <!-- Theme Video -->
   <section class="box">  
 		<video src="/videos/Video1.mp4" autoplay muted loop></video>
-		<h1>Linterex Official</h1> 
-		<h3>Everything is possible when Linterex is here.</h3>
-		<a href="#plans" class="boxBtn">Join Now</a>   
+		<h1 class="hidden">Linterex Official</h1> 
+		<h3 class="hidden">Everything is possible when Linterex is here.</h3>
+		<a href="#plans" class="boxBtn hidden">Join Now</a>   
 	</section>
 
   <!-- Dark Line 3-->
@@ -56,7 +58,7 @@
   <!-- Company Info -->
   <section id="company-info">
       <div class="info">
-        <p class="info-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <p class="info-text hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       </div>
   </section>
 
@@ -68,12 +70,12 @@
   <!-- Plans -->
   <section id="plans">
     <!-- Heading of Plans -->
-    <h1>Our Plans</h1>
+    <h1 class="hidden">Our Plans</h1>
 
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 
-      <div class="pricing-column col-lg-4 col-md-6">
-      <div class="card">
+      <div class="pricing-column col-lg-4 col-md-6 card1">
+      <div class="card hidden">
         <div class="card-header">
           <h3>Beginner</h3> 
         </div>
@@ -87,8 +89,8 @@
       </div>
       </div>
   
-      <div class="pricing-column col-lg-4 col-md-6">
-      <div class="card">
+      <div class="pricing-column col-lg-4 col-md-6 card2">
+      <div class="card hidden">
         <div class="card-header">
           <h3>Intermediate</h3>
         </div>
@@ -102,8 +104,8 @@
       </div>
       </div>
   
-      <div class="pricing-column col-lg-4 col-md-12">
-      <div class="card">
+      <div class="pricing-column col-lg-4 col-md-12 card3">
+      <div class="card hidden">
         <div class="card-header">
           <h3>Professional</h3>
         </div>
@@ -123,7 +125,7 @@
   <!-- Founder Info -->
   <section id="founder-info">
     <div class="info">
-      <p class="info-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+      <p class="info-text hidden"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
     </div>
 </section>
 
@@ -131,31 +133,31 @@
   <section id="footer">
     <footer>
       <div class="footer-content">
-        <h3>Linterex Official</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolore obcaecati aspernatur, quae mollitia deserunt itaque exercitationem dolor dicta blanditiis ad a rerum totam id nihil perspiciatis porro fugiat voluptates.</p>
+        <h3 class="hidden">Linterex Official</h3>
+        <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolore obcaecati aspernatur, quae mollitia deserunt itaque exercitationem dolor dicta blanditiis ad a rerum totam id nihil perspiciatis porro fugiat voluptates.</p>
         <!-- Social Icons -->
         <ul class="socials">
-          <li><a href="" class="fa fa-facebook"></a></li>
-          <li><a href="" class="fa fa-twitter"></a></li>
-          <li><a href="" class="fa fa-google-plus"></a></li>
-          <li><a href="" class="fa fa-youtube"></a></li>
-          <li><a href="" class="fa fa-linkedin-square"></a></li>
+          <li><a href="" class="fa fa-facebook hidden"></a></li>
+          <li><a href="" class="fa fa-twitter hidden"></a></li>
+          <li><a href="" class="fa fa-google-plus hidden"></a></li>
+          <li><a href="" class="fa fa-youtube hidden"></a></li>
+          <li><a href="" class="fa fa-linkedin-square hidden"></a></li>
         </ul>
 
         <!-- Footer Menu -->
         <div class="footer-menu">
           <ul class="f-menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Challanges</a></li>
-            <li><a href="">Resourses</a></li>
-            <li><a href="">Markeplace</a></li>
+            <li class="menu-item hidden"><a href="">Home</a></li>
+            <li class="menu-item hidden"><a href="">Challanges</a></li>
+            <li class="menu-item hidden"><a href="">Resourses</a></li>
+            <li class="menu-item hidden"><a href="">Markeplace</a></li>
           </ul>
         </div>
       </div>
 
       <!-- Home Page Credits -->
       <div class="footer-bottom">
-        <p>Design By - <a href="https://www.instagram.com/dev_mehul18/">Mehul Sathavara</a> </p>
+        <p class="hidden">Design By - <a href="https://www.instagram.com/dev_mehul18/">Mehul Sathavara</a> </p>
       </div>
 
     </footer>
