@@ -361,3 +361,43 @@ li a {
 		margin-bottom: 20px;
 	}
 }
+
+/* Animation of Elements*/
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.menu-item:nth-child(2) {
+	transition-delay: 200ms;
+}
+.menu-item:nth-child(3) {
+	transition-delay: 400ms;
+}
+.menu-item:nth-child(4) {
+	transition-delay: 600ms;
+}
+
+.fa-twitter {
+	transition-delay: 200ms;
+}
+
+.fa-google-plus {
+	transition-delay: 300ms;
+}
+
+.fa-youtube {
+	transition-delay: 400ms;
+}
+
+.fa-linkedin-square {
+	transition-delay: 500ms;
+}
