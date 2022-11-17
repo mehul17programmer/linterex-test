@@ -6,6 +6,7 @@ html{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 /* Body */
@@ -20,14 +21,6 @@ h1 {
     padding-bottom: 5%;
 }
 
-/* Dark Line 1 */
-
-.dark-line1{
-    margin: 0;
-    height: 10px;
-    width: 100%;
-    background-color: #52009b;
-}
 
 /* Navigation Bar */
 
@@ -36,41 +29,132 @@ h1 {
     padding: 0;
 }
 
-.navbar {
-    margin-right: 0px;
-    position: absolute;
-    background-color: #783ec3;
-    height: 80px;
-    width: 100%;
+.nav2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 11;
+	background-color: #212121;
+	padding: 16px 32px;
+	border-bottom: 3px solid #8c38ff;
 }
 
-.navbar-title {
-    margin: 0;
-    padding: 0;
+.nav2-text {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 900;
+	letter-spacing: 2px;
+	text-align: center;
 }
 
-.navbar-text {
-    font-family: sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
+/* Nav Menu */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #212121;
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+  z-index: 12;
+}
+.mnbtn{
+  position: fixed;
+  z-index: 13;
+  right: 20px;
+  /* left: 20px; */
+  top: 11px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  background: #212121;
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .mnbtn{
+  background: #fff;
+  color: #8c38ff;
+}
+#active:checked ~ .mnbtn i:before{
+  content: "\f00d";
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  color: none;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: #fff;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+}
+.wrapper ul li a:after{
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  border-radius: 50px;
+  transform: scaleY(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+.wrapper ul li a:hover:after{
+  transform: scaleY(1);
+}
+.wrapper ul li a:hover{
+  color: #8c38ff;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  text-align: center;
+  width: 100%;
+  color: #202020;
+}
+.content .title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.content p{
+  font-size: 35px;
+  font-weight: 600;
 }
 
-.navbar-text:hover {
-    color:#212529;
-}
-
-/* Dark Line 2 */
-
-.dark-line2{
-    height: 10px;
-    width: 100%;
-    background-color: #52009b;
-    position: absolute;
-    top: 90px;
-}
 
 /* Theme Video */
 
@@ -193,15 +277,6 @@ header .nav li:last-child {
 	}
 }
 
-
-/* Dark Line 3 */
-
-.dark-line3{
-    height: 10px;
-    width: 100%;
-    background-color: #52009b;
-}
-
 /* Company Info */
 
 #company-info {
@@ -215,14 +290,6 @@ header .nav li:last-child {
 
 .info-text {
     color: #fff;
-}
-
-/* Dark Line 4 */
-
-.dark-line4{
-    height: 10px;
-    width: 100%;
-    background-color: #52009b;
 }
 
  /* Our Plans */
@@ -296,7 +363,7 @@ p {
 	margin: 0 10px;
 }
 
-li a {
+.ss{
 	text-decoration: none;
 	color: #fff;
 	border: 1.1px solid white;
