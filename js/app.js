@@ -1,9 +1,9 @@
-// const hamburger_menu = document.querySelector(".hamburger-menu");
-// const container = document.querySelector(".container");
-
-// hamburger_menu.addEventListener("click", () => {
-//   container.classList.toggle("active");
-// });
+// Navbar Responsive Menu
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    } 
 
 // Text Animation
 const observer = new IntersectionObserver((entries) => {
