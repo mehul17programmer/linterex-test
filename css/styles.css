@@ -5,8 +5,9 @@ html{
 * {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Google Sans Regular', sans-serif;
 }
 
 /* Body */
@@ -22,139 +23,118 @@ h1 {
 }
 
 
-/* Navigation Bar */
+/* <!-- Responsive Navigation Bar --> */
 
-#navbar {
-    margin: 0;
-    padding: 0;
-}
-
-.nav2 {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 11;
+.nav-area {
+	width: 100%;
+	height: 80px;
 	background-color: #212121;
-	padding: 16px 32px;
-	border-bottom: 3px solid #8c38ff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 100px;
+	z-index: 11;
 }
 
-.nav2-text {
-	color: #fff;
+.logo {
 	font-size: 28px;
-	font-weight: 900;
-	letter-spacing: 2px;
-	text-align: center;
+	font-weight: bold;
+	color: #fefefe;
 }
 
-/* Nav Menu */
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-.wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #212121;
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  /* clip-path: circle(25px at calc(0% + 45px) 45px); */
-  clip-path: circle(25px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .wrapper{
-  clip-path: circle(75%);
-  z-index: 12;
-}
-.mnbtn{
-  position: fixed;
-  z-index: 13;
-  right: 20px;
-  /* left: 20px; */
-  top: 11px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 25px;
-  color: #fff;
-  cursor: pointer;
-  background: #212121;
-  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-  transition: all 0.3s ease-in-out;
-}
-#active:checked ~ .mnbtn{
-  background: #fff;
-  color: #8c38ff;
-}
-#active:checked ~ .mnbtn i:before{
-  content: "\f00d";
-}
-.wrapper ul{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-}
-.wrapper ul li{
-  margin: 15px 0;
-}
-.wrapper ul li a{
-  color: none;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 30px;
-  color: #fff;
-  position: relative;
-  line-height: 50px;
-  transition: all 0.3s ease;
-}
-.wrapper ul li a:after{
-  position: absolute;
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 50px;
-  left: 0;
-  border-radius: 50px;
-  transform: scaleY(0);
-  z-index: -1;
-  transition: transform 0.3s ease;
-}
-.wrapper ul li a:hover:after{
-  transform: scaleY(1);
-}
-.wrapper ul li a:hover{
-  color: #8c38ff;
-}
-input[type="checkbox"]{
-  display: none;
-}
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  text-align: center;
-  width: 100%;
-  color: #202020;
-}
-.content .title{
-  font-size: 40px;
-  font-weight: 700;
-}
-.content p{
-  font-size: 35px;
-  font-weight: 600;
+.hamburger {
+	display: none;
 }
 
+.nav-bar ul {
+	display: flex;
+	padding-left: 0;
+}
+
+.nav-bar ul li {
+	margin-top: 13px;
+}
+
+.nav-bar ul li a {
+	display: block;
+	color: #fefefe;
+	font-size: 20px;
+	padding: 10px 25px;
+	border-radius: 50px;
+	transition: 0.2s;
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+	color: #212121;
+	background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+	color: #212121;
+	background: #fefefe;
+}
+
+.blue-line {
+	background-color: #8c38ff;
+	height: 3px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 1320px) {
+	.nav-area {
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.nav-area {
+		padding: 0 30px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.hamburger {
+		display: block;
+		cursor: pointer;
+	}
+	.hamburger .line {
+		width: 30px;
+		height: 3px;
+		background: #fefefe;
+		margin: 6px 0;
+	}
+	.nav-bar {
+		z-index: 11;
+		height: 0;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		right: 0;
+		width: 100vw;
+		background: #212121;
+		transition: 0.5s;
+		overflow: hidden;
+	}
+	.nav-bar.active {
+		height: 450px;	
+	}
+	.nav-bar ul {
+		display: block;
+		width: fit-content;
+		margin: 80px auto 0 auto;
+		text-align: center;
+		transition: 0.5s;
+		opacity: 0;
+	}
+	.nav-bar.active ul {
+		opacity: 1;
+	}
+	.nav-bar ul li a {
+		margin-bottom: 12px;
+	}
+}
 
 /* Theme Video */
 
@@ -276,6 +256,7 @@ header .nav li:last-child {
 		padding: 15px 40px;
 	}
 }
+
 
 /* Company Info */
 
